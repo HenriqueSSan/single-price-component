@@ -17,7 +17,7 @@ Os usuários devem poder:
 
 ### 🔗 Links
 
-- **STATUS/ON** Ao vivo Site URL: [Veja o Projeto na Vercel](https://nft-card-component-npz4l9cut-henriquessan.vercel.app/)
+- **STATUS/ON** Ao vivo Site URL: [Veja o Projeto na Vercel](https://single-price-component-tau.vercel.app/)
 
 ## 🚩 Meu Processo
 
