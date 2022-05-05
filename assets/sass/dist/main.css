@@ -1,6 +1,8 @@
+/*=============== Variables ===============*/
 /* ## Colors */
 /* ### Primary */
 /* ### Neutral */
+/*=============== Reset ===============*/
 * {
   margin: 0;
   padding: 0;
@@ -8,31 +10,33 @@
   font-family: "Karla", sans-serif;
 }
 
+/*=============== ROOT ===============*/
 .main {
   width: 100%;
   height: 100vh;
 }
 .main .root {
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
   background-color: #98a6bd;
 }
 .main .root .root__container {
   width: 100%;
   height: 100%;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
 }
 
+/*=============== SIMPLE ===============*/
 .simple {
-  border-radius: 5px;
   max-width: 760px;
   height: auto;
+  border-radius: 5px;
 }
 .simple .simple__container {
   width: 100%;
@@ -46,18 +50,19 @@
   grid-template-rows: 45% 55%;
 }
 
+/*=============== Community ===============*/
 .simple__community {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px 5px 0 0;
   grid-column: 1/3;
   grid-row: 1/2;
-  background-color: #e5eff5;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
+  border-radius: 5px 5px 0 0;
+  background-color: #e5eff5;
 }
 .simple__community .simple__community-data .simple__community-title {
-  color: #2ab2af;
   margin-bottom: 1rem;
+  color: #2ab2af;
 }
 .simple__community .simple__community-data .simple__community-subtitle {
   margin-bottom: 1rem;
@@ -68,56 +73,59 @@
   color: #98a6bd;
 }
 
+/*=============== Subscription ===============*/
 .simple__subscription {
+  grid-column: 1/2;
   width: 100%;
   height: 100%;
-  border-radius: 0 0 0 5px;
-  grid-column: 1/2;
   padding: 2rem;
+  border-radius: 0 0 0 5px;
   background-color: #0a8a88;
 }
 .simple__subscription .simple__subscription-data {
   color: #e5eff5;
 }
 .simple__subscription .simple__subscription-data h3 {
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 24px;
 }
 .simple__subscription .simple__subscription-data p {
   margin-bottom: 1rem;
 }
 .simple__subscription .simple__subscription-data p span {
+  margin-right: 0.45rem;
   font-weight: 700;
   font-size: 32px;
-  margin-right: 0.45rem;
 }
 .simple__subscription .simple__subscription-data button {
   width: 100%;
   height: 48px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.415);
   background-color: #c0df34;
   color: #e5eff5;
-  border: none;
-  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.415);
-  border-radius: 5px;
 }
 
+/*=============== "Why" Text ===============*/
 .simple__why {
+  grid-column: 2/3;
   width: 100%;
   height: 100%;
-  border-radius: 0 0 5px 0;
-  grid-column: 2/3;
   padding: 2rem;
+  border-radius: 0 0 5px 0;
   background-color: #2ab2af;
 }
 .simple__why .simple__why-data {
-  color: #e5eff5;
   width: 55%;
+  color: #e5eff5;
 }
 .simple__why .simple__why-data h3 {
   margin-bottom: 1rem;
 }
 
+/*=============== Media Queries ===============*/
 @media screen and (max-width: 767px) {
   .simple .simple__container .simple__data {
     width: 100%;
